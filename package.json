@@ -3,7 +3,7 @@
     "displayName": "OSS-Action!",
     "description": "Atari Action! Language syntax highlighting",
     "version": "1.0.0",
-    "publisher": "pgarcia",
+    "publisher": "Vintage is The New Old",
     "engines": {
         "vscode": "^1.12.0"
     },
