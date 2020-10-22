@@ -1,0 +1,58 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "OSS-ACTION!",
+    "patterns": [{
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                    "name": "keyword.control.ossaction",
+                    "match": "(?i:\\b(DEFINE|DO|ELSE|ELSEIF|EXIT|FI|FOR|FUNC|FUNCTION|IF|INCLUDE|MODULE|PROC|OD|RETURN|SET|STEP|THEN|TO|UNTIL|WHILE)\\b)"
+                },
+                {
+                    "name": "keyword.operator.logical.ossaction",
+                    "match": "(?i:\\b(AND|NOT|OR|LSH|MOD|RSH|XOR)\\b)"
+                },
+                {
+                    "name": "entity.name.function.ossaction",
+                    "match": "(?i:\\b(PRINT\\w{0,2}|PUT\\w{0,2}|INPUT\\w{0,2}|GET\\w{0,2}|OPEN|CLOSE|XIO|NOTE|POINT|GRAPHICS|SETCOLOR|COLOR|PLOT|DRAWTO|FILL|POSITION|LOCATE|SOUND|SNDRST|PADDLE|PTRIG|STICK|STRIG|SCOPY\\w{0,1}|SASSIGN|STR\\w{0,1}|VAL\\w{0,1}|RAND|BREAK|ERROR|PEEK\\w{0,1}|POKE\\w{0,1}|ZERO|SETBLOCK|MOVEBLOCK|DEVICE|TRACE|LIST|EOF)\\b)"
+                },
+                {
+                    "name": "entity.name.type.ossaction",
+                    "match": "(?i:\\b(ARRAY|BYTE|CARD|CHAR|INT|POINTER|TYPE)\\b)"
+                },
+                {
+                    "name": "comment.line.ossaction",
+                    "match": "(?i:;.*)"
+                },
+                {
+                    "name": "variable.name.ossaction",
+                    "match": "\\b[A-Za-z](\\$|[A-Za-z0-9]*)"
+                },
+                {
+                    "name": "constant.numeric.ossaction",
+                    "match": "'.*|-?\\b(('([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?|(\\$[a-zA-Z0-9]+)|(@[0|1]+)\\b"
+                },
+                {
+                    "match": "%|&|\\*|\\-|\\+|=|<>|<|>|\\|\\^|$|@|#|!",
+                    "name": "keyword.operator.arithmetic.ossaction"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.ossaction",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [{
+                "name": "constant.character.escape.ossaction",
+                "match": "\\\\."
+            }]
+        }
+    },
+    "scopeName": "source.ossaction"
+}

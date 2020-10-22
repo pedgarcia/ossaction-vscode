@@ -1,0 +1,41 @@
+{
+    "name": "ossaction",
+    "displayName": "OSS-Action!",
+    "description": "Atari Action! Language syntax highlighting",
+    "version": "1.0.0",
+    "publisher": "pgarcia",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "icon": "images/ossaction.png",
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pedgarcia/oss-vscode.git"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "ossaction",
+                "aliases": [
+                    "OSS Action!",
+                    "Action!",
+                    "Atari Action!"
+                ],
+                "extensions": [
+                    ".act"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ossaction",
+                "scopeName": "source.ossaction",
+                "path": "./syntaxes/ossaction.tmLanguage.json"
+            }
+        ]
+    }
+}
