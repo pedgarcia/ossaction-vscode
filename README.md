@@ -1,6 +1,5 @@
 # OSS Action!
 
-![Image of Action Logo](https://github.com/pedgarcia/ossaction-vscode/blob/master/images/ossaction.png)
 
 Atari OSS Action! syntax highlighting for Visual Studio Code.
 
