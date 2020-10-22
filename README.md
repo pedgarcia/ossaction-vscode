@@ -1,4 +1,4 @@
-# OSS ActioN! README
+# OSS Action! README
 
 Atari OSS Action! syntax highlighting for Visual Studio Code.
 
